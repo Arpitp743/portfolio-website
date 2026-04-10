@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<header></header>
+
+<div class="container">
+    <div class="Contacts-main">
+        <div class="main-left">
+            <a href="#Contact-form">Contact Me</a>
+            <h1>Let's Work Together</h1>
+            <h3 class="project-idea-p">Have a project or idea? Feel free to reach out — I'd love to hear from you!</h3>
+        <div class="contact-info">
+        <h2>Contact Info</h2>
+        <ul>
+        <li><strong>Email:</strong> arpitagarwal243@gmail.com</li>
+        <li><strong>Phone:</strong> +91-7891060907</li>
+        <li><strong>Location:</strong> Jaipur, Rajasthan, India</li>
+        </ul>
+        </div>
+            <div class="info">
+                <div class="infos">
+                    <h4>Customer Support</h4>
+                    <p>Our support team is available around the clock to address any concerns or queries
+                        you may have.
+                    </p>
+                </div>
+                <div class="infos">
+                    <h4>Feedbacks and Suggestions</h4>
+                    <p>we value your feedback and are continuosly working to improve wizzards. Your 
+                        input is crucial in shaping the future of Wizzards.
+                    </p>
+                </div>
+                <div class="infos">
+                    <h4>Media Quries</h4>
+                    <p>we value your feedback and are continuosly working to improve wizzards. Your 
+                        input is crucial.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main-right" id="Contact-form">
+            <h1>Contact Us</h1>
+            <div class="form">
+                <form action="#">
+                    <div class="form-group">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your E-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Project idea">
+                    </div>
+                    <div class="form-group">
+                    <textarea id="myTextarea" placeholder="Type your message here..." rows="7"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input id="submit" type="submit">
+                    </div>
+                </form>
+            </div>
+            <div class="foot">
+                <p>By contacting us you agree to our <strong>Terms of Service</strong>
+                and <strong>Privacy Policy</strong></p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<footer></footer>
+<script>
+      document.addEventListener("DOMContentLoaded", function() {
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => document.querySelector("header").innerHTML = data);
+
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => document.querySelector("footer").innerHTML = data);
+  });
+</script>
+</body>
+</html>
+
+<!-- <section class="form-contact">
+        <form action="#">
+        <div class="formgroup">
+            <span>Name</span>
+        <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="formgroup">
+            <span>E-Mail</span>
+        <input type="email" id="E-Mail" placeholder="Enter your mail" required>
+        </div>
+
+        <div class="formgroup">
+            <span>Project</span>
+        <input type="text" placeholder="Enter your Project idea">
+        </div>
+
+        <div class="formgroup">
+            <span>Contact</span>
+        <input type="text" id="Contact" placeholder="Contact No">
+        </div>
+
+        <div class="formgroup">
+            <div class="genders">
+                <div class="gender"><h3>Gender</h3></div>
+                    <div class="desc">
+                    <input type="radio" class="gender" name="g" id="male">
+                    <label for="male">Male</label>
+                    </div>
+                    <div class="desc">
+                    <input type="radio" class="gender" name="g" id="female">
+                    <label for="female">Female</label>
+                    </div>
+                    <div class="desc">
+                    <input type="radio" class="gender" name="g" id="other">
+                    <label for="other">Prefer not to say</label>
+                    </div>
+            </div>
+        </div>
+
+        <div class="formgroup">
+            <select class="country">
+                <option value="Select a country">Select a country</option>
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+                <option value="Afganistan">Afganistan</option>
+                <option value="Italy">Italy</option>
+                <option value="Spain">Spain</option>
+                <option value="United States">United States</option>
+                <option value="UAE">UAE</option>
+            </select>
+        </div>
+
+         <div class="formgroup">
+        <input type="submit" id="submit">
+        </div>
+        </form>
+    </section> -->

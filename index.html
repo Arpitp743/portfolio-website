@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<header></header>
+
+<div class="imagee container-fluid">
+    <div class="imagee-content">
+    <h1>Hi, I am Arpit Agarwal</h1>
+    <h4>I am a profesional UI UX Designer.</h4>
+    <p>I can design beautiful websites fully working <br> 
+        the websites i create are very good looking and you <br>will love my work.
+    </p>
+    </div>
+</div>
+
+<div class="container">
+    <!-- <div id="home" class="section1">
+        <h1>Hello, Welcome to my first page, A small start to something big</h1>
+        <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae vero modi ducimus 
+            enim laborum id ipsam exercitationem deleniti praesentium doloremque ea obcaecati 
+            est ratione corporis, esse unde autem. Exercitationem, est.</p>
+    </div> -->
+
+   <div class="section2">
+    <div class="left">
+        <span>I'm glad you're here!</span>
+        <h1>Welcome to my portfolio — a creative journey in web development</h1>
+        <p class="p">With a strong foundation in UI/UX design and web technologies, I bring ideas to life by crafting seamless, responsive, and visually engaging websites. My work is rooted in usability, aesthetics, and performance.</p>
+        <a href="Resume.html" class="explore-project"><i class="fa-solid fa-diagram-project"></i>Explore Projects</a>
+
+    </div>
+    <div class="right">
+        <img src="images/hero.jpeg" alt="Profile" width="150px" height="200px">
+    </div>
+</div>
+
+
+    <div class="section3">
+    <div class="left">
+        <a class="section3-feature-btn" href="about.html#Services">Services</a>
+        <h2>Discover how I bring your ideas to reality</h2>
+        <h4 class="h4">Explore the solutions tailored to grow your business</h4>
+        <a class="section3-resume-btn" href="Resume.html">Resume</a>
+    </div>
+        <div class="right">
+            <div class="r1">
+                <p class="dash">_______</p>
+                <h3>Social Ads</h3>
+                <p class="r1-text">A comprehensive look at what we offer and how we delevier A comprehensive look at what we offer and how we delevier</p>
+                <span class="i">&#x2192;</span>
+            </div>
+            <div class="r1">
+                <p class="dash">_______</p>
+                <h3>Search Engineer</h3>
+                <p class="r1-text">Optimize your website visibility and ranking with effective SEO strategies and we listen to our customers</p>
+                <span class="i">&#x2192;</span>
+            </div>
+            <div class="r1">
+                <p class="dash">_______</p>
+                <h3>Content Marketing</h3>
+                <p class="r1-text">We create strategic and engaging content to build brand awareness,increase engagement and drive conversions</p>
+                <span class="i">&#x2192;</span>
+            </div>
+            <div class="r1">
+                <p class="dash">_______</p>
+                <h3>Saas Marketing</h3>
+                <p class="r1-text">We help your saas product reach the reach the right audience with a data-driven marketing strategy</p>
+                <span class="i">&#x2192;</span>
+            </div>
+        </div>
+    </div>
+
+  <div class="section4">
+    <a href="about.html">Portfolio</a>
+    <h2>Explore my portfolio packed with creative solutions</h2>
+    <h6>Explore my Portfolio to get more ideas and know more </h6>
+        <div class="sec4_images">
+            <div class="imgs"><img src="images/fi1.jpeg" alt="img1"></div>
+            <div class="imgs"><img src="images/f2.jpeg" alt="img2"></div>
+            <div class="imgs"><img src="images/f3.avif" alt="img3"></div>
+            <div class="imgs"><img src="images/f4.avif" alt="img4"></div>
+            <div class="imgs"><img src="images/image_6.avif" alt="img6"></div>
+            <div class="imgs"><img src="images/image_7.avif" alt="img7"></div>
+        </div>
+    </div>
+    
+    <section class="slider-section section5">
+    <div class="slider-container">
+      <div class="np"><button class="nav prev"></button></div>
+      <div class="card-slider">
+        <div class="card-track">
+        <div class="card active">
+          <img src="images/pr-image1.avif" alt="Designer">
+          <span class="tag">UI/UX Designer</span>
+          <h5>Artistry fuels innovation in the digital landscapes. I am a very good Designer and
+            i have designed a lot of good websites.
+          </h5>
+        </div>
+        <div class="card">
+          <img src="images/pr-image2.avif" alt="Developer" >
+          <span class="tag">Web Developer</span>
+          <h5>Coding innovation drive to the future of technology.
+            I am a very good Designer and
+            i have designed a lot of good websites.
+          </h5>
+        </div>
+        <div class="card">
+          <img src="images/pr-image3.avif" alt="Marketer" >
+          <span class="tag">Digital Marketer</span>
+          <h5>Strategic marketing transform brand narratives. I am a very good Designer and
+            i have designed a lot of good websites</h5>
+        </div>
+        </div>
+      </div>
+      <div class="np"><button class="nav next"></button></div>
+    </div>
+    <div class="dots"></div>
+  </section>
+</div>
+
+<footer></footer>
+
+<script>
+  const cards = document.querySelectorAll('.card');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const dotsContainer = document.querySelector('.dots');
+let currentIndex = 0;
+let autoSlideInterval;
+
+function updateSlider() {
+    const cardSlider = document.querySelector('.card-slider');
+    const cardWidth = cardSlider.offsetWidth;
+    const track = document.querySelector('.card-track');
+
+    track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+    document.querySelectorAll('.dots span').forEach(dot => dot.classList.remove('active'));
+    if (dotsContainer.children[currentIndex])
+        dotsContainer.children[currentIndex].classList.add('active');
+}
+
+
+function createDots() {
+    cards.forEach((_, index) => {
+        const dot = document.createElement('span');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => {
+            currentIndex = index;
+            updateSlider();
+            resetAutoSlide(); 
+        });
+        dotsContainer.appendChild(dot);
+    });
+}
+
+prev.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : cards.length - 1;
+    updateSlider();
+    resetAutoSlide(); 
+});
+
+next.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    updateSlider();
+    resetAutoSlide(); 
+});
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % cards.length;
+        updateSlider();
+    }, 2000); 
+}
+
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    startAutoSlide();
+}
+
+createDots();
+updateSlider();
+startAutoSlide(); 
+
+      document.addEventListener("DOMContentLoaded", function() {
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => document.querySelector("header").innerHTML = data);
+
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => document.querySelector("footer").innerHTML = data);
+  });
+</script>
+
+</body>
+</html>
